@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+:root{
+/*Primary*/
+
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+
+/*Neutral*/
+
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+body{
+    font-family: "Red Hat Display", sans-serif;
+    background: url('./images/pattern-background-desktop.svg') no-repeat;
+}
+#himg{max-width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;}
+        
+.card{
+    background: white /*var(--Very-pale-blue)*/;
+    margin: 10% auto;
+    border-radius: 10px;
+    width: 336px;
+    box-shadow: 5px 5px 5px var(--Very-pale-blue);}
+
+h1{text-align: center;
+    margin: 5% 10%;
+    font-weight: 900;
+    color: var(--Dark-blue);
+
+    }
+p {font-size: 16px;
+    text-align: center;
+color: var(--Desaturated-blue);}
+
+.plan{
+    background: var(--Very-pale-blue);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5% 10%; 
+    border-radius: 10px;
+    padding: 2.5%;
+}
+h2{font-size: 16px; 
+color: var(--Dark-blue);}
+span{font-size: 12px;
+color: var(--Desaturated-blue);}
+a{font-size: 12px;}
+a:hover{text-decoration: none;
+    cursor: pointer;}
+button{margin: 5% 10%;
+font-size: 12px;
+background: var(--Bright-blue);
+color: whitesmoke;
+padding: 3% 22.5%;
+border-radius: 10px;
+border: none;
+box-shadow: 0px 5px 5px var(--Pale-blue);}
+
+button:hover{
+    background: var(--Desaturated-blue);
+    cursor: pointer;
+}
+
+h3{
+    padding-bottom: 5%;
+    text-align: center;
+    font-size: 12px;
+    color: var(--Desaturated-blue);}
+h3:hover{ 
+    color: var(--Dark-blue);
+    cursor: pointer;}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/*The following changes will take effect on all screens that are 375px wide & <375px wide*/
+
+@media screen and (max-width: 375px) {
+    *{  margin: 0;
+        padding: 0;
+        box-sizing: border-box;}
+
+    body {
+        background: url('./images/pattern-background-mobile.svg') no-repeat ;
+    }
+    .card{width: 288px;}
+    p{font-size: 12px;
+        padding: 0% 10%;}
+    h1{font-size: 18px;}
+    h2{font-size: 14px;}
+    button {
+        font-size: 10px;
+        padding: 3% 23%;}
+   
+}
